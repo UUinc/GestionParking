@@ -46,6 +46,7 @@ Partial Class Inscription
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.signin_l = New System.Windows.Forms.Label()
+        Me.DateOfBirth_label = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -119,7 +120,7 @@ Partial Class Inscription
         Me.initialiser_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.initialiser_button.Font = New System.Drawing.Font("Kanit Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.initialiser_button.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.initialiser_button.Location = New System.Drawing.Point(358, 454)
+        Me.initialiser_button.Location = New System.Drawing.Point(357, 465)
         Me.initialiser_button.Name = "initialiser_button"
         Me.initialiser_button.Size = New System.Drawing.Size(69, 36)
         Me.initialiser_button.TabIndex = 9
@@ -136,7 +137,7 @@ Partial Class Inscription
         Me.enregistrer_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.enregistrer_button.Font = New System.Drawing.Font("Kanit", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.enregistrer_button.ForeColor = System.Drawing.Color.White
-        Me.enregistrer_button.Location = New System.Drawing.Point(440, 510)
+        Me.enregistrer_button.Location = New System.Drawing.Point(440, 529)
         Me.enregistrer_button.Name = "enregistrer_button"
         Me.enregistrer_button.Size = New System.Drawing.Size(180, 50)
         Me.enregistrer_button.TabIndex = 10
@@ -171,7 +172,7 @@ Partial Class Inscription
         '
         'Sexe_c
         '
-        Me.Sexe_c.Text = "Sex"
+        Me.Sexe_c.Text = "Sexe"
         '
         'Datedenaissance_c
         '
@@ -188,7 +189,7 @@ Partial Class Inscription
         Me.datenaissance_datepicker.CalendarFont = New System.Drawing.Font("Kanit Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.datenaissance_datepicker.Font = New System.Drawing.Font("Roboto Lt", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.datenaissance_datepicker.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.datenaissance_datepicker.Location = New System.Drawing.Point(358, 406)
+        Me.datenaissance_datepicker.Location = New System.Drawing.Point(358, 422)
         Me.datenaissance_datepicker.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.datenaissance_datepicker.Name = "datenaissance_datepicker"
         Me.datenaissance_datepicker.Size = New System.Drawing.Size(350, 30)
@@ -217,7 +218,7 @@ Partial Class Inscription
         Me.back_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.back_btn.Font = New System.Drawing.Font("Kanit", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.back_btn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.back_btn.Location = New System.Drawing.Point(587, 597)
+        Me.back_btn.Location = New System.Drawing.Point(587, 604)
         Me.back_btn.Name = "back_btn"
         Me.back_btn.Size = New System.Drawing.Size(72, 34)
         Me.back_btn.TabIndex = 16
@@ -295,12 +296,23 @@ Partial Class Inscription
         Me.signin_l.AutoSize = True
         Me.signin_l.Font = New System.Drawing.Font("Kanit Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.signin_l.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.signin_l.Location = New System.Drawing.Point(406, 602)
+        Me.signin_l.Location = New System.Drawing.Point(406, 609)
         Me.signin_l.Name = "signin_l"
         Me.signin_l.Size = New System.Drawing.Size(188, 25)
         Me.signin_l.TabIndex = 24
         Me.signin_l.Text = "Already have an account"
         Me.signin_l.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'DateOfBirth_label
+        '
+        Me.DateOfBirth_label.AutoSize = True
+        Me.DateOfBirth_label.Font = New System.Drawing.Font("Kanit", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.DateOfBirth_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.DateOfBirth_label.Location = New System.Drawing.Point(353, 394)
+        Me.DateOfBirth_label.Name = "DateOfBirth_label"
+        Me.DateOfBirth_label.Size = New System.Drawing.Size(111, 25)
+        Me.DateOfBirth_label.TabIndex = 25
+        Me.DateOfBirth_label.Text = "Date of birth :"
         '
         'Inscription
         '
@@ -308,6 +320,7 @@ Partial Class Inscription
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1264, 681)
+        Me.Controls.Add(Me.DateOfBirth_label)
         Me.Controls.Add(Me.signin_l)
         Me.Controls.Add(Me.back_btn)
         Me.Controls.Add(Me.sexe_ComboBox)
@@ -359,4 +372,5 @@ Partial Class Inscription
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents signin_l As Label
+    Friend WithEvents DateOfBirth_label As Label
 End Class

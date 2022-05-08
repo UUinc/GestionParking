@@ -22,7 +22,7 @@ Partial Class GestionCamion
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.caricon_img = New System.Windows.Forms.PictureBox()
+        Me.truckicon_img = New System.Windows.Forms.PictureBox()
         Me.ListView = New System.Windows.Forms.ListView()
         Me.matricul_c = New System.Windows.Forms.ColumnHeader()
         Me.chaufeur_c = New System.Windows.Forms.ColumnHeader()
@@ -51,19 +51,19 @@ Partial Class GestionCamion
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.underline_autre_label = New System.Windows.Forms.Label()
-        CType(Me.caricon_img, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.truckicon_img, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'caricon_img
+        'truckicon_img
         '
-        Me.caricon_img.BackColor = System.Drawing.Color.Transparent
-        Me.caricon_img.BackgroundImage = Global.GestionParking.My.Resources.Resources.van_dark
-        Me.caricon_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.caricon_img.Location = New System.Drawing.Point(427, 28)
-        Me.caricon_img.Name = "caricon_img"
-        Me.caricon_img.Size = New System.Drawing.Size(80, 80)
-        Me.caricon_img.TabIndex = 48
-        Me.caricon_img.TabStop = False
+        Me.truckicon_img.BackColor = System.Drawing.Color.Transparent
+        Me.truckicon_img.BackgroundImage = Global.GestionParking.My.Resources.Resources.van_dark
+        Me.truckicon_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.truckicon_img.Location = New System.Drawing.Point(427, 28)
+        Me.truckicon_img.Name = "truckicon_img"
+        Me.truckicon_img.Size = New System.Drawing.Size(80, 80)
+        Me.truckicon_img.TabIndex = 48
+        Me.truckicon_img.TabStop = False
         '
         'ListView
         '
@@ -379,7 +379,7 @@ Partial Class GestionCamion
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1264, 681)
-        Me.Controls.Add(Me.caricon_img)
+        Me.Controls.Add(Me.truckicon_img)
         Me.Controls.Add(Me.ListView)
         Me.Controls.Add(Me.modifier_Button)
         Me.Controls.Add(Me.entrer_Button)
@@ -406,13 +406,13 @@ Partial Class GestionCamion
         Me.MaximizeBox = False
         Me.Name = "GestionCamion"
         Me.Text = "Truck management"
-        CType(Me.caricon_img, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.truckicon_img, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents caricon_img As PictureBox
+    Friend WithEvents truckicon_img As PictureBox
     Friend WithEvents ListView As ListView
     Friend WithEvents matricul_c As ColumnHeader
     Friend WithEvents chaufeur_c As ColumnHeader
