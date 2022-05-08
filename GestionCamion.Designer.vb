@@ -49,7 +49,7 @@ Partial Class GestionCamion
         Me.title_label = New System.Windows.Forms.Label()
         Me.immatriculation_underline_label = New System.Windows.Forms.Label()
         Me.chauffeur_underline_label = New System.Windows.Forms.Label()
-        Me.nombreDePlace_underline_label = New System.Windows.Forms.Label()
+        Me.tonnage_underline_label = New System.Windows.Forms.Label()
         Me.autre_underline_label = New System.Windows.Forms.Label()
         Me.error_label = New System.Windows.Forms.Label()
         CType(Me.truckicon_img, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -351,16 +351,16 @@ Partial Class GestionCamion
         Me.chauffeur_underline_label.TabIndex = 50
         Me.chauffeur_underline_label.Text = "______________________________________________________________________"
         '
-        'nombreDePlace_underline_label
+        'tonnage_underline_label
         '
-        Me.nombreDePlace_underline_label.AutoSize = True
-        Me.nombreDePlace_underline_label.BackColor = System.Drawing.Color.Transparent
-        Me.nombreDePlace_underline_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.nombreDePlace_underline_label.Location = New System.Drawing.Point(79, 265)
-        Me.nombreDePlace_underline_label.Name = "nombreDePlace_underline_label"
-        Me.nombreDePlace_underline_label.Size = New System.Drawing.Size(357, 15)
-        Me.nombreDePlace_underline_label.TabIndex = 51
-        Me.nombreDePlace_underline_label.Text = "______________________________________________________________________"
+        Me.tonnage_underline_label.AutoSize = True
+        Me.tonnage_underline_label.BackColor = System.Drawing.Color.Transparent
+        Me.tonnage_underline_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.tonnage_underline_label.Location = New System.Drawing.Point(79, 265)
+        Me.tonnage_underline_label.Name = "tonnage_underline_label"
+        Me.tonnage_underline_label.Size = New System.Drawing.Size(357, 15)
+        Me.tonnage_underline_label.TabIndex = 51
+        Me.tonnage_underline_label.Text = "______________________________________________________________________"
         '
         'autre_underline_label
         '
@@ -415,7 +415,7 @@ Partial Class GestionCamion
         Me.Controls.Add(Me.title_label)
         Me.Controls.Add(Me.immatriculation_underline_label)
         Me.Controls.Add(Me.chauffeur_underline_label)
-        Me.Controls.Add(Me.nombreDePlace_underline_label)
+        Me.Controls.Add(Me.tonnage_underline_label)
         Me.Controls.Add(Me.autre_underline_label)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
@@ -454,7 +454,7 @@ Partial Class GestionCamion
     Friend WithEvents title_label As Label
     Friend WithEvents immatriculation_underline_label As Label
     Friend WithEvents chauffeur_underline_label As Label
-    Friend WithEvents nombreDePlace_underline_label As Label
+    Friend WithEvents tonnage_underline_label As Label
     Friend WithEvents autre_underline_label As Label
     Friend WithEvents error_label As Label
 End Class
