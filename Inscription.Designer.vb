@@ -146,13 +146,16 @@ Partial Class Inscription
         '
         'ListView
         '
+        Me.ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.ListView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Nom_c, Me.Email_c, Me.Sexe_c, Me.Datedenaissance_c, Me.motdepasse_c})
-        Me.ListView.Font = New System.Drawing.Font("Kanit", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ListView.Font = New System.Drawing.Font("Kanit Light", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ListView.ForeColor = System.Drawing.Color.White
         Me.ListView.HideSelection = False
         Me.ListView.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1})
-        Me.ListView.Location = New System.Drawing.Point(761, 22)
+        Me.ListView.Location = New System.Drawing.Point(756, 4)
         Me.ListView.Name = "ListView"
-        Me.ListView.Size = New System.Drawing.Size(495, 647)
+        Me.ListView.Size = New System.Drawing.Size(512, 686)
         Me.ListView.TabIndex = 15
         Me.ListView.UseCompatibleStateImageBehavior = False
         Me.ListView.View = System.Windows.Forms.View.Details
@@ -165,12 +168,11 @@ Partial Class Inscription
         'Email_c
         '
         Me.Email_c.Text = "Email"
-        Me.Email_c.Width = 150
+        Me.Email_c.Width = 140
         '
         'Sexe_c
         '
         Me.Sexe_c.Text = "Sex"
-        Me.Sexe_c.Width = 50
         '
         'Datedenaissance_c
         '
@@ -180,7 +182,7 @@ Partial Class Inscription
         'motdepasse_c
         '
         Me.motdepasse_c.Text = "Mot de passe"
-        Me.motdepasse_c.Width = 90
+        Me.motdepasse_c.Width = 100
         '
         'datenaissance_datepicker
         '
@@ -340,7 +342,7 @@ Partial Class Inscription
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "Inscription"
-        Me.Text = "Inscription"
+        Me.Text = "Sign up"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

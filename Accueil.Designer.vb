@@ -148,7 +148,7 @@ Partial Class Accueil
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "Accueil"
-        Me.Text = "Accueil"
+        Me.Text = "Home"
         Me.titlebar_panel.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
