@@ -22,7 +22,7 @@ Partial Class Inscription
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"", ""}, -1)
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"", ""}, -1)
         Me.title_label = New System.Windows.Forms.Label()
         Me.nom_TextBox = New System.Windows.Forms.TextBox()
         Me.email_TextBox = New System.Windows.Forms.TextBox()
@@ -152,7 +152,7 @@ Partial Class Inscription
         Me.ListView.Font = New System.Drawing.Font("Kanit Light", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ListView.ForeColor = System.Drawing.Color.White
         Me.ListView.HideSelection = False
-        Me.ListView.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem2})
+        Me.ListView.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1})
         Me.ListView.Location = New System.Drawing.Point(756, 4)
         Me.ListView.Name = "ListView"
         Me.ListView.Size = New System.Drawing.Size(512, 686)
@@ -221,7 +221,7 @@ Partial Class Inscription
         Me.back_btn.Location = New System.Drawing.Point(587, 604)
         Me.back_btn.Name = "back_btn"
         Me.back_btn.Size = New System.Drawing.Size(72, 34)
-        Me.back_btn.TabIndex = 16
+        Me.back_btn.TabIndex = 1
         Me.back_btn.Text = "Sign in"
         Me.back_btn.UseVisualStyleBackColor = False
         '

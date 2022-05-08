@@ -70,7 +70,7 @@ Partial Class Login
         Me.inscription_button.Location = New System.Drawing.Point(948, 414)
         Me.inscription_button.Name = "inscription_button"
         Me.inscription_button.Size = New System.Drawing.Size(77, 33)
-        Me.inscription_button.TabIndex = 4
+        Me.inscription_button.TabIndex = 1
         Me.inscription_button.Text = "Sign up"
         Me.inscription_button.UseVisualStyleBackColor = False
         '
@@ -86,7 +86,7 @@ Partial Class Login
         Me.connexion_Button.Location = New System.Drawing.Point(809, 348)
         Me.connexion_Button.Name = "connexion_Button"
         Me.connexion_Button.Size = New System.Drawing.Size(182, 52)
-        Me.connexion_Button.TabIndex = 5
+        Me.connexion_Button.TabIndex = 4
         Me.connexion_Button.Text = "Sign In"
         Me.connexion_Button.UseVisualStyleBackColor = True
         '
@@ -121,7 +121,7 @@ Partial Class Login
         Me.Label1.Location = New System.Drawing.Point(693, 82)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(414, 59)
-        Me.Label1.TabIndex = 8
+        Me.Label1.TabIndex = 0
         Me.Label1.Text = "Log into Lazrek Parking"
         '
         'Label2
