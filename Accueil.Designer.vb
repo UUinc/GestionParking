@@ -69,11 +69,13 @@ Partial Class Accueil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1264, 690)
         Me.Controls.Add(Me.GestionUtilisateurs_button)
         Me.Controls.Add(Me.gestionCamions_button)
         Me.Controls.Add(Me.gestionVoiture_button)
         Me.Controls.Add(Me.Title_label)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "Accueil"
         Me.Text = "Accueil"
         Me.ResumeLayout(False)
