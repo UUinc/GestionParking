@@ -40,12 +40,13 @@ Partial Class GestionUtilisateur
         Me.motdepasse_TextBox = New System.Windows.Forms.TextBox()
         Me.email_TextBox = New System.Windows.Forms.TextBox()
         Me.nom_TextBox = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.nom_underline_label = New System.Windows.Forms.Label()
+        Me.email_underline_label = New System.Windows.Forms.Label()
+        Me.confirmMotDePasse_underline_label = New System.Windows.Forms.Label()
+        Me.motDePasse_underline_label = New System.Windows.Forms.Label()
+        Me.sexe_underline_label = New System.Windows.Forms.Label()
         Me.DateOfBirth_label = New System.Windows.Forms.Label()
+        Me.error_label = New System.Windows.Forms.Label()
         CType(Me.usericon_img, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -208,6 +209,7 @@ Partial Class GestionUtilisateur
         Me.datenaissance_datepicker.Name = "datenaissance_datepicker"
         Me.datenaissance_datepicker.Size = New System.Drawing.Size(350, 30)
         Me.datenaissance_datepicker.TabIndex = 77
+        Me.datenaissance_datepicker.Value = New Date(2000, 1, 1, 0, 0, 0, 0)
         '
         'confirmationmotdepasse_TextBox
         '
@@ -259,60 +261,60 @@ Partial Class GestionUtilisateur
         Me.nom_TextBox.Size = New System.Drawing.Size(350, 29)
         Me.nom_TextBox.TabIndex = 72
         '
-        'Label2
+        'nom_underline_label
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(84, 193)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(357, 15)
-        Me.Label2.TabIndex = 78
-        Me.Label2.Text = "______________________________________________________________________"
+        Me.nom_underline_label.AutoSize = True
+        Me.nom_underline_label.BackColor = System.Drawing.Color.Transparent
+        Me.nom_underline_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.nom_underline_label.Location = New System.Drawing.Point(84, 193)
+        Me.nom_underline_label.Name = "nom_underline_label"
+        Me.nom_underline_label.Size = New System.Drawing.Size(357, 15)
+        Me.nom_underline_label.TabIndex = 78
+        Me.nom_underline_label.Text = "______________________________________________________________________"
         '
-        'Label1
+        'email_underline_label
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(84, 251)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(357, 15)
-        Me.Label1.TabIndex = 79
-        Me.Label1.Text = "______________________________________________________________________"
+        Me.email_underline_label.AutoSize = True
+        Me.email_underline_label.BackColor = System.Drawing.Color.Transparent
+        Me.email_underline_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.email_underline_label.Location = New System.Drawing.Point(84, 251)
+        Me.email_underline_label.Name = "email_underline_label"
+        Me.email_underline_label.Size = New System.Drawing.Size(357, 15)
+        Me.email_underline_label.TabIndex = 79
+        Me.email_underline_label.Text = "______________________________________________________________________"
         '
-        'Label4
+        'confirmMotDePasse_underline_label
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(84, 367)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(357, 15)
-        Me.Label4.TabIndex = 81
-        Me.Label4.Text = "______________________________________________________________________"
+        Me.confirmMotDePasse_underline_label.AutoSize = True
+        Me.confirmMotDePasse_underline_label.BackColor = System.Drawing.Color.Transparent
+        Me.confirmMotDePasse_underline_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.confirmMotDePasse_underline_label.Location = New System.Drawing.Point(84, 367)
+        Me.confirmMotDePasse_underline_label.Name = "confirmMotDePasse_underline_label"
+        Me.confirmMotDePasse_underline_label.Size = New System.Drawing.Size(357, 15)
+        Me.confirmMotDePasse_underline_label.TabIndex = 81
+        Me.confirmMotDePasse_underline_label.Text = "______________________________________________________________________"
         '
-        'Label3
+        'motDePasse_underline_label
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(84, 309)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(357, 15)
-        Me.Label3.TabIndex = 80
-        Me.Label3.Text = "______________________________________________________________________"
+        Me.motDePasse_underline_label.AutoSize = True
+        Me.motDePasse_underline_label.BackColor = System.Drawing.Color.Transparent
+        Me.motDePasse_underline_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.motDePasse_underline_label.Location = New System.Drawing.Point(84, 309)
+        Me.motDePasse_underline_label.Name = "motDePasse_underline_label"
+        Me.motDePasse_underline_label.Size = New System.Drawing.Size(357, 15)
+        Me.motDePasse_underline_label.TabIndex = 80
+        Me.motDePasse_underline_label.Text = "______________________________________________________________________"
         '
-        'Label5
+        'sexe_underline_label
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(86, 425)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(357, 15)
-        Me.Label5.TabIndex = 82
-        Me.Label5.Text = "______________________________________________________________________"
+        Me.sexe_underline_label.AutoSize = True
+        Me.sexe_underline_label.BackColor = System.Drawing.Color.Transparent
+        Me.sexe_underline_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.sexe_underline_label.Location = New System.Drawing.Point(86, 425)
+        Me.sexe_underline_label.Name = "sexe_underline_label"
+        Me.sexe_underline_label.Size = New System.Drawing.Size(357, 15)
+        Me.sexe_underline_label.TabIndex = 82
+        Me.sexe_underline_label.Text = "______________________________________________________________________"
         '
         'DateOfBirth_label
         '
@@ -325,12 +327,26 @@ Partial Class GestionUtilisateur
         Me.DateOfBirth_label.TabIndex = 83
         Me.DateOfBirth_label.Text = "Date of birth :"
         '
+        'error_label
+        '
+        Me.error_label.AutoSize = True
+        Me.error_label.Font = New System.Drawing.Font("Kanit ExtraLight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.error_label.ForeColor = System.Drawing.Color.Red
+        Me.error_label.Location = New System.Drawing.Point(98, 556)
+        Me.error_label.Name = "error_label"
+        Me.error_label.Size = New System.Drawing.Size(326, 25)
+        Me.error_label.TabIndex = 84
+        Me.error_label.Text = "wrong inputs, double check your information"
+        Me.error_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.error_label.Visible = False
+        '
         'GestionUtilisateur
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1264, 681)
+        Me.Controls.Add(Me.error_label)
         Me.Controls.Add(Me.DateOfBirth_label)
         Me.Controls.Add(Me.sexe_ComboBox)
         Me.Controls.Add(Me.datenaissance_datepicker)
@@ -338,11 +354,11 @@ Partial Class GestionUtilisateur
         Me.Controls.Add(Me.motdepasse_TextBox)
         Me.Controls.Add(Me.email_TextBox)
         Me.Controls.Add(Me.nom_TextBox)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.nom_underline_label)
+        Me.Controls.Add(Me.email_underline_label)
+        Me.Controls.Add(Me.confirmMotDePasse_underline_label)
+        Me.Controls.Add(Me.motDePasse_underline_label)
+        Me.Controls.Add(Me.sexe_underline_label)
         Me.Controls.Add(Me.usericon_img)
         Me.Controls.Add(Me.ListView)
         Me.Controls.Add(Me.modifier_Button)
@@ -377,11 +393,12 @@ Partial Class GestionUtilisateur
     Friend WithEvents motdepasse_TextBox As TextBox
     Friend WithEvents email_TextBox As TextBox
     Friend WithEvents nom_TextBox As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents nom_underline_label As Label
+    Friend WithEvents email_underline_label As Label
+    Friend WithEvents confirmMotDePasse_underline_label As Label
+    Friend WithEvents motDePasse_underline_label As Label
+    Friend WithEvents sexe_underline_label As Label
     Friend WithEvents motDePasse_c As ColumnHeader
     Friend WithEvents DateOfBirth_label As Label
+    Friend WithEvents error_label As Label
 End Class
