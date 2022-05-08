@@ -22,7 +22,7 @@
     End Sub
 
     Private Sub entrer_Button_Click(sender As Object, e As EventArgs) Handles entrer_Button.Click
-        Dim items() As String = New String() {immatriculation_TextBox.Text, chaufeur_TextBox.Text, GetMarque(), datedentrer_DatePicker.Text, datedesortie_DatePicker.Text}
+        Dim items() As String = New String() {immatriculation_TextBox.Text, chaufeur_TextBox.Text, nbrplaces_TextBox.Text, GetMarque(), datedentrer_DatePicker.Text, datedesortie_DatePicker.Text}
         itemGroup = New ListViewItem(items)
 
         ListView.Items.Add(itemGroup)
@@ -45,7 +45,7 @@
 
     Private Sub modifier_Button_Click(sender As Object, e As EventArgs) Handles modifier_Button.Click
         Dim index = ListView.FocusedItem.Index
-        Dim items() As String = New String() {immatriculation_TextBox.Text, chaufeur_TextBox.Text, GetMarque(), datedentrer_DatePicker.Text, datedesortie_DatePicker.Text}
+        Dim items() As String = New String() {immatriculation_TextBox.Text, chaufeur_TextBox.Text, nbrplaces_TextBox.Text, GetMarque(), datedentrer_DatePicker.Text, datedesortie_DatePicker.Text}
         itemGroup = New ListViewItem(items)
         ListView.Items.Remove(ListView.FocusedItem)
         ListView.Items.Insert(index, itemGroup)

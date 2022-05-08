@@ -42,6 +42,7 @@ Partial Class GestionVoiture
         Me.ListView = New System.Windows.Forms.ListView()
         Me.matricul_c = New System.Windows.Forms.ColumnHeader()
         Me.chaufeur_c = New System.Windows.Forms.ColumnHeader()
+        Me.nombreDePlace_c = New System.Windows.Forms.ColumnHeader()
         Me.marque_c = New System.Windows.Forms.ColumnHeader()
         Me.datedentrer_c = New System.Windows.Forms.ColumnHeader()
         Me.datedesortir_c = New System.Windows.Forms.ColumnHeader()
@@ -150,11 +151,11 @@ Partial Class GestionVoiture
         'autre_TextBox
         '
         Me.autre_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.autre_TextBox.Font = New System.Drawing.Font("Kanit Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.autre_TextBox.Location = New System.Drawing.Point(362, 543)
+        Me.autre_TextBox.Font = New System.Drawing.Font("Kanit ExtraLight", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.autre_TextBox.Location = New System.Drawing.Point(362, 545)
         Me.autre_TextBox.Name = "autre_TextBox"
         Me.autre_TextBox.PlaceholderText = "marque name.."
-        Me.autre_TextBox.Size = New System.Drawing.Size(153, 24)
+        Me.autre_TextBox.Size = New System.Drawing.Size(153, 26)
         Me.autre_TextBox.TabIndex = 11
         Me.autre_TextBox.Visible = False
         '
@@ -275,13 +276,13 @@ Partial Class GestionVoiture
         '
         Me.ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
         Me.ListView.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.matricul_c, Me.chaufeur_c, Me.marque_c, Me.datedentrer_c, Me.datedesortir_c})
+        Me.ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.matricul_c, Me.chaufeur_c, Me.nombreDePlace_c, Me.marque_c, Me.datedentrer_c, Me.datedesortir_c})
         Me.ListView.Font = New System.Drawing.Font("Kanit Light", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ListView.ForeColor = System.Drawing.Color.White
         Me.ListView.HideSelection = False
-        Me.ListView.Location = New System.Drawing.Point(579, 5)
+        Me.ListView.Location = New System.Drawing.Point(551, -1)
         Me.ListView.Name = "ListView"
-        Me.ListView.Size = New System.Drawing.Size(685, 676)
+        Me.ListView.Size = New System.Drawing.Size(713, 682)
         Me.ListView.TabIndex = 22
         Me.ListView.UseCompatibleStateImageBehavior = False
         Me.ListView.View = System.Windows.Forms.View.Details
@@ -289,12 +290,17 @@ Partial Class GestionVoiture
         'matricul_c
         '
         Me.matricul_c.Text = "Matricul"
-        Me.matricul_c.Width = 120
+        Me.matricul_c.Width = 110
         '
         'chaufeur_c
         '
         Me.chaufeur_c.Text = "Chaufeur"
-        Me.chaufeur_c.Width = 130
+        Me.chaufeur_c.Width = 110
+        '
+        'nombreDePlace_c
+        '
+        Me.nombreDePlace_c.Text = "Nombre de place"
+        Me.nombreDePlace_c.Width = 120
         '
         'marque_c
         '
@@ -304,12 +310,12 @@ Partial Class GestionVoiture
         'datedentrer_c
         '
         Me.datedentrer_c.Text = "Date d'entrer"
-        Me.datedentrer_c.Width = 140
+        Me.datedentrer_c.Width = 120
         '
         'datedesortir_c
         '
         Me.datedesortir_c.Text = "date de sortir"
-        Me.datedesortir_c.Width = 140
+        Me.datedesortir_c.Width = 120
         '
         'caricon_img
         '
@@ -360,7 +366,7 @@ Partial Class GestionVoiture
         Me.underline_autre_label.AutoSize = True
         Me.underline_autre_label.BackColor = System.Drawing.Color.Transparent
         Me.underline_autre_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.underline_autre_label.Location = New System.Drawing.Point(358, 557)
+        Me.underline_autre_label.Location = New System.Drawing.Point(358, 561)
         Me.underline_autre_label.Name = "underline_autre_label"
         Me.underline_autre_label.Size = New System.Drawing.Size(162, 15)
         Me.underline_autre_label.TabIndex = 29
@@ -434,4 +440,5 @@ Partial Class GestionVoiture
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents underline_autre_label As Label
+    Friend WithEvents nombreDePlace_c As ColumnHeader
 End Class
