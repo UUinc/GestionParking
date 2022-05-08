@@ -75,7 +75,7 @@ Partial Class GestionCamion
         Me.ListView.HideSelection = False
         Me.ListView.Location = New System.Drawing.Point(548, -1)
         Me.ListView.Name = "ListView"
-        Me.ListView.Size = New System.Drawing.Size(713, 682)
+        Me.ListView.Size = New System.Drawing.Size(718, 682)
         Me.ListView.TabIndex = 47
         Me.ListView.UseCompatibleStateImageBehavior = False
         Me.ListView.View = System.Windows.Forms.View.Details

@@ -23,8 +23,8 @@
     End Sub
 
     Private Sub viewUsers_button_Click(sender As Object, e As EventArgs) Handles viewUsers_button.Click
-        viewUsers_button.Show()
-        viewUsers_button.Location = Location
+        UserView.Show()
+        UserView.Location = Location
         Hide()
     End Sub
 End Class

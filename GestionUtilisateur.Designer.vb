@@ -28,6 +28,7 @@ Partial Class GestionUtilisateur
         Me.email_c = New System.Windows.Forms.ColumnHeader()
         Me.sex_c = New System.Windows.Forms.ColumnHeader()
         Me.dateDeNaissance_c = New System.Windows.Forms.ColumnHeader()
+        Me.motDePasse_c = New System.Windows.Forms.ColumnHeader()
         Me.modifier_Button = New System.Windows.Forms.Button()
         Me.entrer_Button = New System.Windows.Forms.Button()
         Me.sortir_Button = New System.Windows.Forms.Button()
@@ -44,7 +45,6 @@ Partial Class GestionUtilisateur
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.motDePasse_c = New System.Windows.Forms.ColumnHeader()
         Me.DateOfBirth_label = New System.Windows.Forms.Label()
         CType(Me.usericon_img, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -70,7 +70,7 @@ Partial Class GestionUtilisateur
         Me.ListView.HideSelection = False
         Me.ListView.Location = New System.Drawing.Point(548, -1)
         Me.ListView.Name = "ListView"
-        Me.ListView.Size = New System.Drawing.Size(713, 682)
+        Me.ListView.Size = New System.Drawing.Size(722, 682)
         Me.ListView.TabIndex = 70
         Me.ListView.UseCompatibleStateImageBehavior = False
         Me.ListView.View = System.Windows.Forms.View.Details
@@ -94,6 +94,11 @@ Partial Class GestionUtilisateur
         '
         Me.dateDeNaissance_c.Text = "Date de naissance"
         Me.dateDeNaissance_c.Width = 150
+        '
+        'motDePasse_c
+        '
+        Me.motDePasse_c.Text = "Mot de passe"
+        Me.motDePasse_c.Width = 150
         '
         'modifier_Button
         '
@@ -308,11 +313,6 @@ Partial Class GestionUtilisateur
         Me.Label5.Size = New System.Drawing.Size(357, 15)
         Me.Label5.TabIndex = 82
         Me.Label5.Text = "______________________________________________________________________"
-        '
-        'motDePasse_c
-        '
-        Me.motDePasse_c.Text = "Mot de passe"
-        Me.motDePasse_c.Width = 150
         '
         'DateOfBirth_label
         '
