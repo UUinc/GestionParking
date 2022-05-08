@@ -47,10 +47,11 @@ Partial Class GestionCamion
         Me.immatriculation_TextBox = New System.Windows.Forms.TextBox()
         Me.chaufeur_TextBox = New System.Windows.Forms.TextBox()
         Me.title_label = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.underline_autre_label = New System.Windows.Forms.Label()
+        Me.immatriculation_underline_label = New System.Windows.Forms.Label()
+        Me.chauffeur_underline_label = New System.Windows.Forms.Label()
+        Me.nombreDePlace_underline_label = New System.Windows.Forms.Label()
+        Me.autre_underline_label = New System.Windows.Forms.Label()
+        Me.error_label = New System.Windows.Forms.Label()
         CType(Me.truckicon_img, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -122,7 +123,7 @@ Partial Class GestionCamion
         Me.modifier_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.modifier_Button.Font = New System.Drawing.Font("Kanit", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.modifier_Button.ForeColor = System.Drawing.Color.White
-        Me.modifier_Button.Location = New System.Drawing.Point(204, 620)
+        Me.modifier_Button.Location = New System.Drawing.Point(204, 625)
         Me.modifier_Button.Name = "modifier_Button"
         Me.modifier_Button.Size = New System.Drawing.Size(130, 40)
         Me.modifier_Button.TabIndex = 46
@@ -141,7 +142,7 @@ Partial Class GestionCamion
         Me.entrer_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.entrer_Button.Font = New System.Drawing.Font("Kanit", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.entrer_Button.ForeColor = System.Drawing.Color.White
-        Me.entrer_Button.Location = New System.Drawing.Point(39, 620)
+        Me.entrer_Button.Location = New System.Drawing.Point(39, 625)
         Me.entrer_Button.Name = "entrer_Button"
         Me.entrer_Button.Size = New System.Drawing.Size(130, 40)
         Me.entrer_Button.TabIndex = 45
@@ -176,7 +177,7 @@ Partial Class GestionCamion
         Me.supprimer_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.supprimer_Button.Font = New System.Drawing.Font("Kanit", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.supprimer_Button.ForeColor = System.Drawing.Color.White
-        Me.supprimer_Button.Location = New System.Drawing.Point(368, 620)
+        Me.supprimer_Button.Location = New System.Drawing.Point(368, 625)
         Me.supprimer_Button.Name = "supprimer_Button"
         Me.supprimer_Button.Size = New System.Drawing.Size(130, 40)
         Me.supprimer_Button.TabIndex = 43
@@ -187,7 +188,7 @@ Partial Class GestionCamion
         '
         Me.datedesortie_DatePicker.Font = New System.Drawing.Font("Roboto Lt", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.datedesortie_DatePicker.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.datedesortie_DatePicker.Location = New System.Drawing.Point(276, 381)
+        Me.datedesortie_DatePicker.Location = New System.Drawing.Point(276, 366)
         Me.datedesortie_DatePicker.Name = "datedesortie_DatePicker"
         Me.datedesortie_DatePicker.Size = New System.Drawing.Size(153, 33)
         Me.datedesortie_DatePicker.TabIndex = 42
@@ -196,7 +197,7 @@ Partial Class GestionCamion
         '
         Me.datedentrer_DatePicker.Font = New System.Drawing.Font("Roboto Lt", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.datedentrer_DatePicker.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.datedentrer_DatePicker.Location = New System.Drawing.Point(276, 330)
+        Me.datedentrer_DatePicker.Location = New System.Drawing.Point(276, 315)
         Me.datedentrer_DatePicker.Name = "datedentrer_DatePicker"
         Me.datedentrer_DatePicker.Size = New System.Drawing.Size(153, 33)
         Me.datedentrer_DatePicker.TabIndex = 41
@@ -206,7 +207,7 @@ Partial Class GestionCamion
         Me.datedesortie_Label.AutoSize = True
         Me.datedesortie_Label.Font = New System.Drawing.Font("Kanit Light", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.datedesortie_Label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.datedesortie_Label.Location = New System.Drawing.Point(80, 382)
+        Me.datedesortie_Label.Location = New System.Drawing.Point(80, 367)
         Me.datedesortie_Label.Name = "datedesortie_Label"
         Me.datedesortie_Label.Size = New System.Drawing.Size(153, 35)
         Me.datedesortie_Label.TabIndex = 40
@@ -217,7 +218,7 @@ Partial Class GestionCamion
         Me.datedentree_Label.AutoSize = True
         Me.datedentree_Label.Font = New System.Drawing.Font("Kanit Light", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.datedentree_Label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.datedentree_Label.Location = New System.Drawing.Point(80, 329)
+        Me.datedentree_Label.Location = New System.Drawing.Point(80, 314)
         Me.datedentree_Label.Name = "datedentree_Label"
         Me.datedentree_Label.Size = New System.Drawing.Size(147, 35)
         Me.datedentree_Label.TabIndex = 39
@@ -227,7 +228,7 @@ Partial Class GestionCamion
         '
         Me.autre_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.autre_TextBox.Font = New System.Drawing.Font("Kanit ExtraLight", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.autre_TextBox.Location = New System.Drawing.Point(359, 545)
+        Me.autre_TextBox.Location = New System.Drawing.Point(359, 530)
         Me.autre_TextBox.Name = "autre_TextBox"
         Me.autre_TextBox.PlaceholderText = "marque name.."
         Me.autre_TextBox.Size = New System.Drawing.Size(153, 26)
@@ -239,7 +240,7 @@ Partial Class GestionCamion
         Me.autre_RadioButton.AutoSize = True
         Me.autre_RadioButton.Font = New System.Drawing.Font("Kanit Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.autre_RadioButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.autre_RadioButton.Location = New System.Drawing.Point(276, 543)
+        Me.autre_RadioButton.Location = New System.Drawing.Point(276, 528)
         Me.autre_RadioButton.Name = "autre_RadioButton"
         Me.autre_RadioButton.Size = New System.Drawing.Size(78, 34)
         Me.autre_RadioButton.TabIndex = 37
@@ -252,7 +253,7 @@ Partial Class GestionCamion
         Me.mercedes_RadioButton.AutoSize = True
         Me.mercedes_RadioButton.Font = New System.Drawing.Font("Kanit Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.mercedes_RadioButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.mercedes_RadioButton.Location = New System.Drawing.Point(276, 506)
+        Me.mercedes_RadioButton.Location = New System.Drawing.Point(276, 491)
         Me.mercedes_RadioButton.Name = "mercedes_RadioButton"
         Me.mercedes_RadioButton.Size = New System.Drawing.Size(162, 34)
         Me.mercedes_RadioButton.TabIndex = 36
@@ -265,7 +266,7 @@ Partial Class GestionCamion
         Me.bmw_RadioButton.AutoSize = True
         Me.bmw_RadioButton.Font = New System.Drawing.Font("Kanit Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.bmw_RadioButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.bmw_RadioButton.Location = New System.Drawing.Point(276, 470)
+        Me.bmw_RadioButton.Location = New System.Drawing.Point(276, 455)
         Me.bmw_RadioButton.Name = "bmw_RadioButton"
         Me.bmw_RadioButton.Size = New System.Drawing.Size(73, 34)
         Me.bmw_RadioButton.TabIndex = 35
@@ -278,7 +279,7 @@ Partial Class GestionCamion
         Me.marque_Label.AutoSize = True
         Me.marque_Label.Font = New System.Drawing.Font("Kanit Light", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.marque_Label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.marque_Label.Location = New System.Drawing.Point(80, 450)
+        Me.marque_Label.Location = New System.Drawing.Point(80, 435)
         Me.marque_Label.Name = "marque_Label"
         Me.marque_Label.Size = New System.Drawing.Size(98, 35)
         Me.marque_Label.TabIndex = 34
@@ -289,7 +290,7 @@ Partial Class GestionCamion
         Me.tonnage_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tonnage_TextBox.Font = New System.Drawing.Font("Kanit Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.tonnage_TextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.tonnage_TextBox.Location = New System.Drawing.Point(84, 264)
+        Me.tonnage_TextBox.Location = New System.Drawing.Point(84, 249)
         Me.tonnage_TextBox.Name = "tonnage_TextBox"
         Me.tonnage_TextBox.PlaceholderText = "Tonnage"
         Me.tonnage_TextBox.Size = New System.Drawing.Size(345, 29)
@@ -300,7 +301,7 @@ Partial Class GestionCamion
         Me.immatriculation_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.immatriculation_TextBox.Font = New System.Drawing.Font("Kanit Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.immatriculation_TextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.immatriculation_TextBox.Location = New System.Drawing.Point(84, 143)
+        Me.immatriculation_TextBox.Location = New System.Drawing.Point(84, 128)
         Me.immatriculation_TextBox.Name = "immatriculation_TextBox"
         Me.immatriculation_TextBox.PlaceholderText = "Immatriculation"
         Me.immatriculation_TextBox.Size = New System.Drawing.Size(345, 29)
@@ -311,9 +312,9 @@ Partial Class GestionCamion
         Me.chaufeur_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.chaufeur_TextBox.Font = New System.Drawing.Font("Kanit Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.chaufeur_TextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.chaufeur_TextBox.Location = New System.Drawing.Point(84, 203)
+        Me.chaufeur_TextBox.Location = New System.Drawing.Point(84, 188)
         Me.chaufeur_TextBox.Name = "chaufeur_TextBox"
-        Me.chaufeur_TextBox.PlaceholderText = "Chaufeur"
+        Me.chaufeur_TextBox.PlaceholderText = "Chauffeur"
         Me.chaufeur_TextBox.Size = New System.Drawing.Size(345, 29)
         Me.chaufeur_TextBox.TabIndex = 32
         '
@@ -328,50 +329,63 @@ Partial Class GestionCamion
         Me.title_label.TabIndex = 30
         Me.title_label.Text = "Truck management"
         '
-        'Label2
+        'immatriculation_underline_label
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(79, 160)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(357, 15)
-        Me.Label2.TabIndex = 49
-        Me.Label2.Text = "______________________________________________________________________"
+        Me.immatriculation_underline_label.AutoSize = True
+        Me.immatriculation_underline_label.BackColor = System.Drawing.Color.Transparent
+        Me.immatriculation_underline_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.immatriculation_underline_label.Location = New System.Drawing.Point(79, 145)
+        Me.immatriculation_underline_label.Name = "immatriculation_underline_label"
+        Me.immatriculation_underline_label.Size = New System.Drawing.Size(357, 15)
+        Me.immatriculation_underline_label.TabIndex = 49
+        Me.immatriculation_underline_label.Text = "______________________________________________________________________"
         '
-        'Label1
+        'chauffeur_underline_label
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(79, 220)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(357, 15)
-        Me.Label1.TabIndex = 50
-        Me.Label1.Text = "______________________________________________________________________"
+        Me.chauffeur_underline_label.AutoSize = True
+        Me.chauffeur_underline_label.BackColor = System.Drawing.Color.Transparent
+        Me.chauffeur_underline_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.chauffeur_underline_label.Location = New System.Drawing.Point(79, 205)
+        Me.chauffeur_underline_label.Name = "chauffeur_underline_label"
+        Me.chauffeur_underline_label.Size = New System.Drawing.Size(357, 15)
+        Me.chauffeur_underline_label.TabIndex = 50
+        Me.chauffeur_underline_label.Text = "______________________________________________________________________"
         '
-        'Label3
+        'nombreDePlace_underline_label
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(79, 280)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(357, 15)
-        Me.Label3.TabIndex = 51
-        Me.Label3.Text = "______________________________________________________________________"
+        Me.nombreDePlace_underline_label.AutoSize = True
+        Me.nombreDePlace_underline_label.BackColor = System.Drawing.Color.Transparent
+        Me.nombreDePlace_underline_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.nombreDePlace_underline_label.Location = New System.Drawing.Point(79, 265)
+        Me.nombreDePlace_underline_label.Name = "nombreDePlace_underline_label"
+        Me.nombreDePlace_underline_label.Size = New System.Drawing.Size(357, 15)
+        Me.nombreDePlace_underline_label.TabIndex = 51
+        Me.nombreDePlace_underline_label.Text = "______________________________________________________________________"
         '
-        'underline_autre_label
+        'autre_underline_label
         '
-        Me.underline_autre_label.AutoSize = True
-        Me.underline_autre_label.BackColor = System.Drawing.Color.Transparent
-        Me.underline_autre_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.underline_autre_label.Location = New System.Drawing.Point(355, 561)
-        Me.underline_autre_label.Name = "underline_autre_label"
-        Me.underline_autre_label.Size = New System.Drawing.Size(162, 15)
-        Me.underline_autre_label.TabIndex = 52
-        Me.underline_autre_label.Text = "_______________________________"
-        Me.underline_autre_label.Visible = False
+        Me.autre_underline_label.AutoSize = True
+        Me.autre_underline_label.BackColor = System.Drawing.Color.Transparent
+        Me.autre_underline_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.autre_underline_label.Location = New System.Drawing.Point(355, 546)
+        Me.autre_underline_label.Name = "autre_underline_label"
+        Me.autre_underline_label.Size = New System.Drawing.Size(162, 15)
+        Me.autre_underline_label.TabIndex = 52
+        Me.autre_underline_label.Text = "_______________________________"
+        Me.autre_underline_label.Visible = False
+        '
+        'error_label
+        '
+        Me.error_label.AutoSize = True
+        Me.error_label.Font = New System.Drawing.Font("Kanit ExtraLight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.error_label.ForeColor = System.Drawing.Color.Red
+        Me.error_label.Location = New System.Drawing.Point(110, 578)
+        Me.error_label.Name = "error_label"
+        Me.error_label.Size = New System.Drawing.Size(326, 25)
+        Me.error_label.TabIndex = 86
+        Me.error_label.Text = "wrong inputs, double check your information"
+        Me.error_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.error_label.Visible = False
         '
         'GestionCamion
         '
@@ -379,6 +393,7 @@ Partial Class GestionCamion
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1264, 681)
+        Me.Controls.Add(Me.error_label)
         Me.Controls.Add(Me.truckicon_img)
         Me.Controls.Add(Me.ListView)
         Me.Controls.Add(Me.modifier_Button)
@@ -398,10 +413,10 @@ Partial Class GestionCamion
         Me.Controls.Add(Me.immatriculation_TextBox)
         Me.Controls.Add(Me.chaufeur_TextBox)
         Me.Controls.Add(Me.title_label)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.underline_autre_label)
+        Me.Controls.Add(Me.immatriculation_underline_label)
+        Me.Controls.Add(Me.chauffeur_underline_label)
+        Me.Controls.Add(Me.nombreDePlace_underline_label)
+        Me.Controls.Add(Me.autre_underline_label)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "GestionCamion"
@@ -437,8 +452,9 @@ Partial Class GestionCamion
     Friend WithEvents immatriculation_TextBox As TextBox
     Friend WithEvents chaufeur_TextBox As TextBox
     Friend WithEvents title_label As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents underline_autre_label As Label
+    Friend WithEvents immatriculation_underline_label As Label
+    Friend WithEvents chauffeur_underline_label As Label
+    Friend WithEvents nombreDePlace_underline_label As Label
+    Friend WithEvents autre_underline_label As Label
+    Friend WithEvents error_label As Label
 End Class

@@ -2,17 +2,17 @@
     Dim itemGroup As ListViewItem
     Private Sub bmw_RadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles bmw_RadioButton.CheckedChanged
         autre_TextBox.Visible = False
-        underline_autre_label.Visible = False
+        autre_underline_label.Visible = False
     End Sub
 
     Private Sub mercedes_RadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles mercedes_RadioButton.CheckedChanged
         autre_TextBox.Visible = False
-        underline_autre_label.Visible = False
+        autre_underline_label.Visible = False
     End Sub
 
     Private Sub autre_RadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles autre_RadioButton.CheckedChanged
         autre_TextBox.Visible = True
-        underline_autre_label.Visible = True
+        autre_underline_label.Visible = True
     End Sub
 
     Private Sub sortir_Button_Click(sender As Object, e As EventArgs) Handles sortir_Button.Click
