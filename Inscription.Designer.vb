@@ -22,7 +22,7 @@ Partial Class Inscription
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"", ""}, -1)
+        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"", ""}, -1)
         Me.title_label = New System.Windows.Forms.Label()
         Me.nom_TextBox = New System.Windows.Forms.TextBox()
         Me.email_TextBox = New System.Windows.Forms.TextBox()
@@ -45,7 +45,6 @@ Partial Class Inscription
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.signin_l = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -152,7 +151,7 @@ Partial Class Inscription
         Me.ListView.Font = New System.Drawing.Font("Kanit Light", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ListView.ForeColor = System.Drawing.Color.White
         Me.ListView.HideSelection = False
-        Me.ListView.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1})
+        Me.ListView.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem2})
         Me.ListView.Location = New System.Drawing.Point(756, 4)
         Me.ListView.Name = "ListView"
         Me.ListView.Size = New System.Drawing.Size(512, 686)
@@ -189,7 +188,7 @@ Partial Class Inscription
         Me.datenaissance_datepicker.CalendarFont = New System.Drawing.Font("Kanit Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.datenaissance_datepicker.Font = New System.Drawing.Font("Roboto Lt", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.datenaissance_datepicker.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.datenaissance_datepicker.Location = New System.Drawing.Point(358, 398)
+        Me.datenaissance_datepicker.Location = New System.Drawing.Point(358, 406)
         Me.datenaissance_datepicker.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.datenaissance_datepicker.Name = "datenaissance_datepicker"
         Me.datenaissance_datepicker.Size = New System.Drawing.Size(350, 30)
@@ -207,7 +206,7 @@ Partial Class Inscription
         Me.sexe_ComboBox.Name = "sexe_ComboBox"
         Me.sexe_ComboBox.Size = New System.Drawing.Size(350, 38)
         Me.sexe_ComboBox.TabIndex = 7
-        Me.sexe_ComboBox.Text = "Male"
+        Me.sexe_ComboBox.Text = "Homme"
         '
         'back_btn
         '
@@ -291,17 +290,6 @@ Partial Class Inscription
         Me.Label5.TabIndex = 22
         Me.Label5.Text = "______________________________________________________________________"
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(356, 419)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(357, 15)
-        Me.Label6.TabIndex = 23
-        Me.Label6.Text = "______________________________________________________________________"
-        '
         'signin_l
         '
         Me.signin_l.AutoSize = True
@@ -338,7 +326,6 @@ Partial Class Inscription
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label6)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "Inscription"
@@ -371,6 +358,5 @@ Partial Class Inscription
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents signin_l As Label
 End Class
