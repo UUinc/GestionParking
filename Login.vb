@@ -14,4 +14,19 @@
         Inscription.Location = Location
         Hide()
     End Sub
+
+    'hide the error message
+    Private Sub nomutilisateur_TextBox_Enter(sender As Object, e As EventArgs) Handles nomutilisateur_TextBox.Enter
+        erreursaisie_label.Visible = False
+    End Sub
+    Private Sub motdepasse_TextBox_Enter(sender As Object, e As EventArgs) Handles motdepasse_TextBox.Enter
+        erreursaisie_label.Visible = False
+    End Sub
+    Private Sub Login_VisibleChanged(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
+        erreursaisie_label.Visible = False
+
+        'wipe text boxes
+        nomutilisateur_TextBox.Text = ""
+        motdepasse_TextBox.Text = ""
+    End Sub
 End Class
