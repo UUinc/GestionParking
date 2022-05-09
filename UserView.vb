@@ -10,12 +10,8 @@
         'wipe data in list view
         ListView.Items.Clear()
 
-        'change the commented text with data from the database
-        'Dim items() As String = New String() {nom_TextBox.Text, email_TextBox.Text, sexe_ComboBox.Text, datenaissance_datepicker.Text, motdepasse_TextBox.Text}
-        Dim items() As String = New String() {"test1", "test2", "test3", "test4", "test5"}
-
-        itemGroup = New ListViewItem(items)
-
-        ListView.Items.Add(itemGroup)
+        For Each item As ListViewItem In GestionUtilisateur.ListView.Items
+            ListView.Items.Add(item.Clone())
+        Next
     End Sub
 End Class

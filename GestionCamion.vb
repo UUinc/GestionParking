@@ -182,7 +182,5 @@
     Private Sub GestionCamion_VisibleChanged(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
         error_label.Visible = False
         ResetColor()
-
-        ListView.Items.Clear()
     End Sub
 End Class

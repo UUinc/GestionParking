@@ -22,6 +22,8 @@
         itemGroup = New ListViewItem(items)
 
         ListView.Items.Add(itemGroup)
+        'also added in the main listview
+        GestionUtilisateur.ListView.Items.Add(itemGroup.Clone())
 
     End Sub
 
@@ -117,6 +119,11 @@
         error_label.Visible = False
         ResetColor()
 
+        'wipe data in list view
         ListView.Items.Clear()
+
+        For Each item As ListViewItem In GestionUtilisateur.ListView.Items
+            ListView.Items.Add(item.Clone())
+        Next
     End Sub
 End Class

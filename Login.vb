@@ -1,6 +1,21 @@
-﻿Public Class Login
+﻿Imports System.Data.OleDb
+Public Class Login
+
     Private Sub connexion_Button_Click(sender As Object, e As EventArgs) Handles connexion_Button.Click
-        If nomutilisateur_TextBox.Text = "admin" And motdepasse_TextBox.Text = "admin" Then
+        Login()
+    End Sub
+    Sub Login()
+        Dim isValid As Boolean = False
+
+        For Each item As ListViewItem In GestionUtilisateur.ListView.Items
+
+            If email_TextBox.Text = item.SubItems.Item(1).Text And motdepasse_TextBox.Text = item.SubItems.Item(4).Text Then
+                isValid = True
+                Exit For
+            End If
+        Next
+
+        If isValid Or (email_TextBox.Text = "admin" And motdepasse_TextBox.Text = "admin") Then
             Accueil.Show()
             Accueil.Location = Location
             Hide()
@@ -16,7 +31,7 @@
     End Sub
 
     'hide the error message
-    Private Sub nomutilisateur_TextBox_Enter(sender As Object, e As EventArgs) Handles nomutilisateur_TextBox.Enter
+    Private Sub nomutilisateur_TextBox_Enter(sender As Object, e As EventArgs) Handles email_TextBox.Enter
         erreursaisie_label.Visible = False
     End Sub
     Private Sub motdepasse_TextBox_Enter(sender As Object, e As EventArgs) Handles motdepasse_TextBox.Enter
@@ -26,7 +41,7 @@
         erreursaisie_label.Visible = False
 
         'wipe text boxes
-        nomutilisateur_TextBox.Text = ""
+        email_TextBox.Text = ""
         motdepasse_TextBox.Text = ""
     End Sub
 End Class

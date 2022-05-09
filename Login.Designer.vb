@@ -22,29 +22,29 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.nomutilisateur_TextBox = New System.Windows.Forms.TextBox()
+        Me.email_TextBox = New System.Windows.Forms.TextBox()
         Me.motdepasse_TextBox = New System.Windows.Forms.TextBox()
         Me.inscription_button = New System.Windows.Forms.Button()
         Me.connexion_Button = New System.Windows.Forms.Button()
         Me.erreursaisie_label = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.email_underline_label = New System.Windows.Forms.Label()
+        Me.password_underline_label = New System.Windows.Forms.Label()
         Me.signin_l = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'nomutilisateur_TextBox
+        'email_TextBox
         '
-        Me.nomutilisateur_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.nomutilisateur_TextBox.Font = New System.Drawing.Font("Kanit Light", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.nomutilisateur_TextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.nomutilisateur_TextBox.Location = New System.Drawing.Point(725, 192)
-        Me.nomutilisateur_TextBox.Name = "nomutilisateur_TextBox"
-        Me.nomutilisateur_TextBox.PlaceholderText = "Enter your username"
-        Me.nomutilisateur_TextBox.Size = New System.Drawing.Size(347, 26)
-        Me.nomutilisateur_TextBox.TabIndex = 2
+        Me.email_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.email_TextBox.Font = New System.Drawing.Font("Kanit Light", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.email_TextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.email_TextBox.Location = New System.Drawing.Point(725, 192)
+        Me.email_TextBox.Name = "email_TextBox"
+        Me.email_TextBox.PlaceholderText = "Enter your email"
+        Me.email_TextBox.Size = New System.Drawing.Size(347, 26)
+        Me.email_TextBox.TabIndex = 2
         '
         'motdepasse_TextBox
         '
@@ -124,27 +124,27 @@ Partial Class Login
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Log into Lazrek Parking"
         '
-        'Label2
+        'email_underline_label
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(721, 209)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(357, 15)
-        Me.Label2.TabIndex = 9
-        Me.Label2.Text = "______________________________________________________________________"
+        Me.email_underline_label.AutoSize = True
+        Me.email_underline_label.BackColor = System.Drawing.Color.Transparent
+        Me.email_underline_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.email_underline_label.Location = New System.Drawing.Point(721, 209)
+        Me.email_underline_label.Name = "email_underline_label"
+        Me.email_underline_label.Size = New System.Drawing.Size(357, 15)
+        Me.email_underline_label.TabIndex = 9
+        Me.email_underline_label.Text = "______________________________________________________________________"
         '
-        'Label3
+        'password_underline_label
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(721, 280)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(357, 15)
-        Me.Label3.TabIndex = 10
-        Me.Label3.Text = "______________________________________________________________________"
+        Me.password_underline_label.AutoSize = True
+        Me.password_underline_label.BackColor = System.Drawing.Color.Transparent
+        Me.password_underline_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.password_underline_label.Location = New System.Drawing.Point(721, 280)
+        Me.password_underline_label.Name = "password_underline_label"
+        Me.password_underline_label.Size = New System.Drawing.Size(357, 15)
+        Me.password_underline_label.TabIndex = 10
+        Me.password_underline_label.Text = "______________________________________________________________________"
         '
         'signin_l
         '
@@ -171,9 +171,9 @@ Partial Class Login
         Me.Controls.Add(Me.connexion_Button)
         Me.Controls.Add(Me.inscription_button)
         Me.Controls.Add(Me.motdepasse_TextBox)
-        Me.Controls.Add(Me.nomutilisateur_TextBox)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.email_TextBox)
+        Me.Controls.Add(Me.email_underline_label)
+        Me.Controls.Add(Me.password_underline_label)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "Login"
@@ -183,14 +183,14 @@ Partial Class Login
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents nomutilisateur_TextBox As TextBox
+    Friend WithEvents email_TextBox As TextBox
     Friend WithEvents motdepasse_TextBox As TextBox
     Friend WithEvents inscription_button As Button
     Friend WithEvents connexion_Button As Button
     Friend WithEvents erreursaisie_label As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents email_underline_label As Label
+    Friend WithEvents password_underline_label As Label
     Friend WithEvents signin_l As Label
 End Class
